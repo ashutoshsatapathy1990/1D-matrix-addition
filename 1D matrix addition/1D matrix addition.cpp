@@ -16,17 +16,17 @@ double cpu_time_used;
 //OpenCL kernel which is run for every work item created.
 
 const char *saxpy_kernel =
-"#pragma OPENCL EXTENSION cl_khr_fp32 : enable			\n"	\
-"__kernel												\n"	\
+"#pragma OPENCL EXTENSION cl_khr_fp32 : enable					\n"	\
+"__kernel									\n"	\
 "void saxpy_kernel (float alpha,						\n"	\
-"					__global float *A,					\n"	\
-"					__global float *B,					\n"	\
-"					__global float *C)					\n"	\
-"{														\n"	\
+"					__global float *A,			\n"	\
+"					__global float *B,			\n"	\
+"					__global float *C)			\n"	\
+"{										\n"	\
 "		//Get the index of the work item				\n"	\
 "		int index = get_global_id(0);					\n"	\
-"		C[index] = alpha * A[index] + B[index];			\n"	\
-"}														\n" \
+"		C[index] = alpha * A[index] + B[index];				\n"	\
+"}										\n"	\
 "\n";
 
 int main()
@@ -110,10 +110,10 @@ int main()
 	clStatus = clFinish(command_queue);
 
 	//Display the result to the screen
-	/*for (size_t i = 0; i < VECTOR_SIZE; i++)
+	for (size_t i = 0; i < VECTOR_SIZE; i++)
 	{
 		printf("%f	*	%f	+	%f	=	%f	\n", alpha, A[i], B[i], C[i]);
-	}*/
+	}
 
 	//Finally release all OpenCL allocated objects and host buffers
 	clStatus = clReleaseKernel(kernel);
