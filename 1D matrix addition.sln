@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1D matrix addition", "1D matrix addition\1D matrix addition.vcxproj", "{893D37F1-9C2A-4028-BE73-5139C9F0A9E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893D37F1-9C2A-4028-BE73-5139C9F0A9E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{893D37F1-9C2A-4028-BE73-5139C9F0A9E0}.Debug|Win32.Build.0 = Debug|Win32
+		{893D37F1-9C2A-4028-BE73-5139C9F0A9E0}.Release|Win32.ActiveCfg = Release|Win32
+		{893D37F1-9C2A-4028-BE73-5139C9F0A9E0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
